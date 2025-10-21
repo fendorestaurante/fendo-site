@@ -1,0 +1,1 @@
+# Fendo — Web\n\n1) `npm install`\n2) `npm run dev`\n\nDespliegue en Vercel/Netlify directo.\n
