@@ -36,25 +36,15 @@ export default function FendoLandingPage() {
         <a href="#reserva" className="rounded-xl bg-[#0b3a2a] text-white px-4 py-2 text-sm font-medium hover:opacity-90">Reservar</a>
       </nav>
     </header>
-    <Section id="hero" className="relative overflow-hidden pt-24 pb-24">
-      <div className="absolute inset-0 -z-10"><div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,#0b3a2a_0%,transparent_40%),radial-gradient(circle_at_80%_0%,#d4af37_0%,transparent_35%)] opacity-10" /></div>
-      <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <h1 className="text-4xl md:text-6xl font-semibold text-[#0b3a2a] leading-tight">Cocina de territorio, <span className="text-[#d4af37]">creación</span> y taberna</h1>
-          <p className="mt-6 text-lg text-neutral-700 max-w-2xl">Fendo es una taberna de tapas y raciones con alma de taller, y un espacio íntimo de menú degustación —"Mesa de creación"— donde transformamos naturaleza en plato. En el centro de Huesca.</p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#reserva" className="rounded-xl bg-[#0b3a2a] text-white px-5 py-3 text-sm font-medium hover:opacity-90">Reservar mesa</a>
-            <a href="#carta" className="rounded-xl border border-[#0b3a2a]/30 px-5 py-3 text-sm font-medium text-[#0b3a2a] hover:border-[#0b3a2a]">Ver carta</a>
-          </div>
-          <div className="mt-6"><Pill>Huesca, Aragón</Pill><Pill>Producto local</Pill><Pill>Verde botella & dorado</Pill></div>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
-          <div className="aspect-[4/3] rounded-3xl bg-white shadow-sm border border-neutral-200 overflow-hidden grid place-items-center">
-            <div className="w-full h-full bg-[#0b3a2a] grid place-items-center p-8"><FendoLogo className="w-[85%] max-w-[680px]" /></div>
-          </div>
-        </motion.div>
-      </div>
-    </Section>
+{/* Hero limpio con logo centrado */}
+<Section id="hero" className="relative min-h-screen flex items-center justify-center bg-[#0b3a2a]">
+  <img
+    src="/logo-fendo.jpeg"
+    alt="Fendo logotipo"
+    className="max-w-[400px] w-3/4 h-auto"
+  />
+</Section>
+
     <Section id="filosofia" className="bg-white">
       <Title subtitle="Nuestra forma de entender la cocina en dos espacios complementarios: la taberna —cercana, viva— y la mesa —precisa, creativa—.">Filosofía Fendo</Title>
       <div className="grid md:grid-cols-3 gap-6">
