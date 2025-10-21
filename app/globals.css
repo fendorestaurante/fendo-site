@@ -1,1 +1,44 @@
-@tailwind base;@tailwind components;@tailwind utilities;html,body{min-height:100%;scroll-behavior:smooth;background:#f7f7f5}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fondo general verde botella */
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  background-color: #0b3a2a; /* verde botella Fendo */
+  color: #f7f7f5; /* blanco roto suave */
+}
+
+/* Ajustes tipográficos */
+h1, h2, h3, h4 {
+  color: #d4af37; /* dorado elegante */
+}
+
+/* Ajustes de tarjetas y bordes */
+section {
+  background-color: #0b3a2a; /* coherente con el fondo */
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+button, a {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Botones principales */
+button, .btn-primary {
+  background-color: #d4af37;
+  color: #0b3a2a;
+  font-weight: 500;
+}
+
+button:hover, .btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Textos secundarios */
+.text-neutral-700, .text-neutral-600, .text-neutral-500 {
+  color: #f7f7f5 !important;
+}
+
